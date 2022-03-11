@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Formulario de registro</title>
+</head>
+<body>
+  <h1>Formulario de registro</h1>
+  <form action="" method="post">
+    <p>
+      <label for="nombre">Nombre:* </label>
+      <input type="text" name="nombre" id="nombre" maxlength="50" required>
+    </p>
+    <p>
+      <label for="apellido">Apellidos:* </label>
+      <input type="text" name="apellido" id="apellido" maxlength="50" required>
+    </p>
+    <p>
+      <label for="edad">Edad: </label>
+      <input type="number" name="edad" id="edad" min="0" max="130">
+    </p>
+    <p>
+      Sexo:
+      <input type="radio" name="sexo" id="sexo-h" value="h" />
+      <label for="sexo-h">hombre</label>
+      <input type="radio" name="sexo" id="sexo-m" value="m" />
+      <label for="sexo-m">mujer</label>
+      <input type="radio" name="sexo" id="sexo-o" value="o" />
+      <label for="sexo-o">otro</label>
+    </p>
+    <p>
+      <label for="email">Correo:* </label>
+      <input type="email" name="email" id="email" maxlength="100" required>
+    </p>
+    <p>
+      <label for="poblacion">Población</label>
+      <select name="poblacion" id="poblacion">
+        <option value="" selected>Elige una opción</option>
+        <option value="madrid">Madrid</option>
+        <option value="lisboa">Lisboa</option>
+        <option value="roma">Roma</option>
+        <option value="paris">Paris</option>
+      </select>
+    </p>
+    <p>
+    <label for="descripcion">Descripción</label>
+    <textarea name="descripcion" id="descripcion" rows="6" cols="60"></textarea>
+    </p>
+    <p>
+      <input type="checkbox" name="info" id="info" checked="checked" />
+      <label for="info">Deseo recibir información sobre novedades y ofertas</label>
+    </p>
+    <p>
+      <input type="checkbox" name="legal" id="legal"/>
+	    <label for="legal">Declaro haber leido y aceptar las condiciones generales del
+         programa y la normativa sobre protección de datos</label>
+    </p>
+
+    <input type="submit" value="ENVIAR">
+  </form>
+
+</body>
+</html>
