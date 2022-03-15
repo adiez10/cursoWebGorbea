@@ -1,36 +1,92 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<title> 				</title>
-<meta charset="UTF-8" />
-<meta name="keywords" content="tus palabras clave, aqui" />
-<meta name="description" content="breve descripcion del sitio" />
-<meta name="author" content="autor del documento" />
-<meta http-equiv="refresh" content="30" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="	" />
+  <title>Nantendo Games</title>
+  <meta charset="UTF-8" />
+  <meta name="keywords" content="Nantendo,Nantendo Games,Videojuegos,empresa videojuegos" />
+  <meta name="description" content="Web Oficial Nantendo Games Info lanzamientos" />
+  <meta name="author" content="Adrián DC" />
+  <meta http-equiv="refresh" content="30" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/estilos.css" />
 </head>
 <body>
 
-Nantendo Games, Inc.
-
-Nombre:
-Apellidos:
-Contrase&ntilde;a:
-Repite la contrase&ntilde;a:
-Indica tu sexo: 
-Hombre 
-Mujer
-Suscribirme al bolet&iacute;n de novedades
-¿Sobre qu&eacute; Juego te gustar&iacute;a recibir informaci&oacute;n?
-Mariano kart
-Celdas
-Mariano Party
-Tatris
-
-
-Copyright 
-Nantendo, Inc. 2020. Todos los derechos reservados
-Diseñado por NaN | Valid CSS HTML
+  <header>
+    <table>
+      <tr>
+        <td><h1>Nantendo Games, INC.</h1></td>
+        <td><img src="../imagenes/logo.png" alt="logo Nantendo" width="50" height="50"></td>
+      </tr>
+    </table>
+    <hr>
+  </header>
+  <main>
+    <form method="post" action="#">
+      <fieldset>
+        <legend>Formulario de contacto</legend>
+        <table>
+          <tr>
+            <td><label for="nombre">Nombre:</label></td>
+            <td><input type="text" value="" name="nombre" size="20" maxlength="18" id="nombre"> </td>
+          </tr>
+          <tr>
+            <td><label for="apellido">Apellidos:</label></td>
+            <td><input type="text" value="" placeholder="Apellidos" name="apellido" size="50" maxlength="48" id="apellido"></td>
+          </tr>
+          <tr>
+            <td><label for="pass">Contrase&ntilde;a:</label></td>
+            <td><input type="password" value="" name="pass" size="20" maxlength="10" id="pass"></td>
+          </tr>
+          <tr>
+            <td><label for="pass2">Repite la contrase&ntilde;a:</label></td>
+            <td><input type="password" value="" name="pass2" size="20" maxlength="10" id="pass2"></td>
+          </tr>
+          <tr>
+            <td>Indica tu sexo:</td>
+            <td>
+              <input type="radio" name="sexo" value="hombre" id="hombre"><label for="hombre">Hombre</label>
+              <input type="radio" name="sexo" value="mujer" id="mujer"><label for="mujer">Mujer</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="suscribir" value="suscribir" id="suscri" checked="checked">
+              <label for="suscri">Suscribirme al bolet&iacute;n de novedades</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="interes">¿Sobre qu&eacute; Juego te gustar&iacute;a recibir informaci&oacute;n?</label></td>
+            <td>
+              <select id="interes" name="interes">
+                <option value="">Seleccione una opción</option>
+                <option value="kart">Mariano Kart</option>
+                <option value="celda">Celdas</option>
+                <option value="party">Mariano Party</option>
+                <option value="tatris">Tatris</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" value="Enviar" name="enviar">
+              <input type="reset" value="Borrar los datos introducidos" name="reset">
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <p>
+      <a href="../index.html" title="volver"><img src="../imagenes/volver.png" alt="volver" width="50" height="50"></a>
+    </p>
+  </main>
+  <footer>
+    <hr>
+    <p>
+      Copyright &copy;
+      <a href="../index.html">Nantendo, Inc.</a> 2020. Todos los derechos reservados <br>
+      Diseñado por <a href="#">NaN</a> | Valid <a href="#">CSS</a> &amp; <a href="#">HTML</a>
+    </p>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,5 @@
+https://www.campusmvp.es/recursos/post/bibliotecas-de-animaciones-con-css-y-javascript.aspx
+http://bouncejs.com/
+https://animejs.com/
+
+https://ianlunn.github.io/Hover/
