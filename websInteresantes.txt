@@ -3,3 +3,6 @@ http://bouncejs.com/
 https://animejs.com/
 
 https://ianlunn.github.io/Hover/
+
+http://www.dynamicdrive.com/style/csslibrary/category/C17/
+https://www.cssdesignawards.com

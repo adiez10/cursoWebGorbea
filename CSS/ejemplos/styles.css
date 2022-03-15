@@ -1,0 +1,15 @@
+h1{
+  /* Aplica estilos css a los h1*/
+  color: red;
+  font-size: 82px;
+}
+h2{
+  color:  rgba(255,0,0,0.5)
+}
+/* Aplica estilos css
+a los p y span*/
+p, span{
+  color: rgb(200,120,054);
+  font-size: 32px;
+  font-family: Comic Sans MS;
+}
