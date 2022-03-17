@@ -1,0 +1,53 @@
+h1{
+  font-family: arial;
+}
+
+main{
+  font-family: verdana;
+}
+
+h2{
+  border-bottom-style: solid;
+  border-bottom-width: 0.05em;
+  border-bottom-color: turquoise;
+}
+
+p{
+  font-size: 10px;
+}
+
+#parraf1{
+  border: 1px solid black;
+  padding: 10px;
+}
+/*pongo las tres alternativas usar a ,u o span para los textos azules subrrayados*/
+span{
+  color: blue;
+  text-decoration: underline;
+}
+
+u{
+  color: blue;
+}
+
+a{
+  color: blue;
+}
+
+.textrojo{
+  color:red;
+}
+
+.fondogrisoscuro{
+  background-color: #9e9e9e;
+}
+
+
+.fondogrisclaro{
+  background-color: #f1ecec;
+}
+/*regla que aplica a la seleccion de texto en parrafos*/
+p::selection{
+  background-color: green;
+  color: purple;
+}

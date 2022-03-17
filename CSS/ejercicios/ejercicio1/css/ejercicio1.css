@@ -1,0 +1,47 @@
+body{
+  font-family: calibri;
+}
+
+h1{
+  text-align: center;
+  padding-bottom: 20px;
+  color: #2ab4bd;
+  border-bottom-width: 2px;
+  border-bottom-color : black;
+  border-bottom-style : solid;
+}
+
+h2{
+  text-align: left;
+  padding-bottom: 5px;
+  border-bottom-width: 1px;
+  border-bottom-color : #2ab4bd;
+  border-bottom-style : dotted;
+  width: 75%;
+}
+
+p{
+  text-align: left;
+  margin-left: 1.5em;
+}
+
+section{
+  margin-bottom: 2em;
+}
+
+/*tres alternativas para hacer lo mismo (mas o menos)*/
+span{
+  color: #2ab4bd;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+u{
+  color: #2ab4bd;
+  font-weight: bold;
+}
+
+a{
+  color: #2ab4bd;
+  font-weight: bold;
+}

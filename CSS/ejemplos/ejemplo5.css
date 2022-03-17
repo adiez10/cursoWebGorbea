@@ -1,0 +1,22 @@
+h1 {
+  border: 5px dotted green ;
+  /* margin:  50px; */
+  margin: 0 auto;
+  text-align: center;
+}
+p {
+  border-style: dashed;
+  border-width: 3px;
+  border-color: red;
+  border-left-width : 2px;
+  border-left-color : blue;
+  border-left-style : dotted;
+  border-bottom-width: 10px;
+  border-bottom-color : purple;
+  border-bottom-style : solid;
+  border-top-left-radius: 10px;
+  background-color: yellow;
+
+  height : auto;
+  width: auto;
+}
