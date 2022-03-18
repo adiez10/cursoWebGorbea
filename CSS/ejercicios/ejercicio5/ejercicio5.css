@@ -1,0 +1,34 @@
+/* Cada enlace tiene un color de texto en función de la
+dirección (url).
+○ Al poner el ratón sobre ellos, todos muestran un borde
+negro y fondo blanco.
+○ Una vez visitados, tienen un fondo de color #dbdbd */
+a[href="https://www.google.es/"] {
+  color: #FFFAAA;
+}
+a[href="https://www.radiogorbea.com/"] {
+  color: green;
+}
+a[href="https://www.marca.com/"] {
+  color: purple;
+}
+a[href="https://www.chollometro.com/"] {
+  color: orange;
+}
+a[href="https://www.vitoria-gasteiz.org/"] {
+  color: yellow;
+}
+
+/*a{
+  color:blue;
+}*/
+
+ a:hover{
+  border: 3px solid black;
+  background-color: pink;
+}
+
+a:visited{
+  background-color: orange;
+  color: red;
+}

@@ -1,0 +1,92 @@
+*{
+    cursor: progress;
+}
+
+input[type="text"] {
+  background-color: red;
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+label[for="nombre"]{
+  color: #ff0010;
+}
+
+input[type="email"] {
+  background-color: green;
+  width: 300px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+label[for="email"]{
+  color: blue;
+  background-color: purple;
+}
+
+#poblacion {
+  color: yellow;
+  background-color: green;
+  width: 300px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  height: 60px;
+  width: 60px;
+  background-color: pink;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+a:hover{
+  color:green;
+  font-size: 50px;
+  cursor: not-allowed;
+}
+
+input:disabled{
+  background: #CCC;
+}
+
+input:required {
+ border: 5px dashed red;
+}
+
+/* :checked {
+ margin-left: 50px;
+} */
+
+input[type="checkbox"]:checked{
+ box-shadow: 0 0 0 3px orange;
+}
+
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
