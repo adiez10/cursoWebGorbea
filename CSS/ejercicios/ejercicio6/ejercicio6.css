@@ -1,7 +1,12 @@
+input{
+  font-size: 16px;
+  accent-color: green;
+}
 /*
 
 ○ Añade un estilo al pasar el ratón sobre cada elemento.  */
 input[type="checkbox"]:checked{
+  font-size: 14px;
   accent-color: orange;
 }
 

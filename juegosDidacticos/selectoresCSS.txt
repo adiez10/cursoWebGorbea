@@ -1,0 +1,27 @@
+https://flukeout.github.io/
+
+8. - bento orange.small
+9. - plate, bento
+10.- *
+11.- plate *
+12.- plate + apple
+13.- bento ~ pickle
+14.- plate>apple
+15.- plate orange:first-child
+16.- plate :only-child
+17.-
+18.-
+19.-
+20.-
+21.-
+22.-
+23.-
+24.-
+25.-
+26.-
+27.-
+28.-
+29.-
+30.-
+31.-
+32.-
