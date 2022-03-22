@@ -1,0 +1,23 @@
+https://flukeout.github.io/
+(para trabajar selectores de css)
+
+http://flexboxfroggy.com/#es
+(para trabajar la propiedad FLEX de css)
+
+http://www.hexinvaders.com/
+(para trabajar la identificación de colores en HEX)
+
+https://markup.roppychop.com/
+(para html)
+
+http://www.flexboxdefense.com/
+(para trabajar propiedades de css)
+
+http://play.elevatorsaga.com/
+(para javascript)
+
+https://alexnisnevich.github.io/untrusted/
+(javascript. Un poco más complicadillo)
+
+https://quizizz.com/
+(juego preguntas interactivo)
