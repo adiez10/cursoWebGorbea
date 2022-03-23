@@ -1,0 +1,30 @@
+:root {
+ --colorprincipal: #5b5858;
+}
+
+div{
+  width: 100px;
+  height: 100px;
+  /* background-color: var(--gris); */
+  background-color: var(--colorprincipal);
+  margin: 10px;
+  display: inline-block;
+}
+#div1{
+  border-radius: 5px 5px 5px 5px;
+}
+
+#div2{
+  border-radius: 48px 48px 48px 48px;
+}
+
+#div3{
+  border-radius: 48px 0px 0px 0px;
+}
+
+section{
+  width: 250px;
+  height: 250px;
+  background-color: var(--colorprincipal);
+  margin: 100px;
+}
