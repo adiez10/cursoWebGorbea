@@ -1,0 +1,6 @@
+https://cssreference.io/flexbox/
+
+https://creatuweb.espaciolatino.com/ejercicios/flex/index.html
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+

@@ -1,0 +1,46 @@
+.contenedor{
+  display: flex;
+  min-height: 97vh;
+  font-family: sans-serif;
+  gap: 2px;
+}
+
+.menu,.principal{
+  /* height: 100vh; */
+  padding: 12px 24px;
+}
+
+.menu{
+  background-color: lightblue;
+  width: 150px;
+}
+
+.principal{
+  background-color: lightgreen;
+  flex-grow: 1;
+}
+
+ul{
+  display:flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  padding:0;
+  list-style: none;
+}
+
+li{
+  border-bottom: 2px solid black;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  padding: 8px 12px;
+  display:block;
+}
+
+a:hover{
+  background-color: darkgreen;
+  color: white;
+
+}
