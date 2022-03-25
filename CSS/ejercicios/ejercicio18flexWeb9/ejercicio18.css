@@ -1,0 +1,27 @@
+
+body{
+  font-family: sans-serif;
+  display: flex;
+  padding: 20px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.izquierda{
+  flex: 2;
+  padding: 12px;
+  background: #2bd8e9;
+  color: white;
+}
+.derecha{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.fila{
+  /* flex: 1 1 100%; */
+  flex-grow: 1;
+  /* flex-shrink: 1;
+  flex-basis: 100%; */
+  border: 1px solid lightgreen;
+  padding: 24px;
+}
