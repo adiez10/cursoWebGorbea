@@ -1,0 +1,30 @@
+  body{
+    font-family: sans-serif;
+    flex-direction: column;
+    display:flex;
+    height: 100vh;
+  }
+  header{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    background: #009688;
+    height: 24px;
+  }
+  main, header{
+    text-align: center;
+  }
+  main{
+    display: flex;
+    height: 100%;
+  }
+  .lateral{
+    flex: 1;
+    background: #ff9800;
+    color: white;
+    padding: 24px;
+  }
+  .centro{
+    flex: 2;
+    padding: 24px;
+  }

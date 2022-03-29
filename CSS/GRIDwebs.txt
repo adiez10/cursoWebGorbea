@@ -3,3 +3,6 @@ https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/
 https://www.adictosaltrabajo.com/2018/01/30/maquetacion-con-css-grid/
 
 https://dinahosting.com/blog/css-grid-ventajas-y-primeros-pasos/#:~:text=en%20la%20rejilla-,%C2%BFQu%C3%A9%20es%20CSS%20Grid%3F,han%20convertido%20en%20un%20est%C3%A1ndar.
+
+
+templates: https://www.quackit.com/html/templates/css_grid_templates.cfm

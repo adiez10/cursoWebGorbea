@@ -1,0 +1,44 @@
+/* .grid {
+  display: grid;
+  grid-template-columns: 50px 300px;
+  grid-template-rows: 200px 75px;
+} */
+
+/* .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  width: 30%;
+} */
+
+/* .grid {
+  display: grid;
+  grid-template-columns: 100px repeat(2, 50px) 200px;
+  grid-template-rows: repeat(2, 50px 100px) repeat(2, 20px 40px);
+} */
+
+/* .grid {
+  display: grid;
+  grid-template-areas: "head head ."
+                       "menuI main menuD"
+                       "none foot foot";
+} */
+
+.grid {
+  display: grid;
+  column-gap: 100px;
+  row-gap: 10px;
+  grid-template-areas: "head head head"
+                       "menuI main menuD"
+                       "foot foot foot";
+}
+
+.a { grid-area: head; background: blue }
+.b { grid-area: menuI; background: red }
+.c { grid-area: main; background: green }
+.e { grid-area: menuD; background: pink }
+.d { grid-area: foot; background: orange }
+
+.item{
+  border: 2px solid black;
+}

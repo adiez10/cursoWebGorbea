@@ -1,0 +1,107 @@
+p,h1,h2,h3,h4,h5,h6,li{
+    font-family: "Roboto Condensed";
+    color: #444;
+}
+
+p{
+    font-size: 20px;
+    font-weight: normal;
+    width: 70%;
+    margin : 0 auto;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 40px;
+    text-align: center;
+}
+
+h2{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+body{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+/**HEADER**/
+header{
+    border-bottom: 1px solid darkgray;
+    border-top: 1px solid darkgray;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+}
+
+
+/**MAIN**/
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px auto;
+    width: 80%;
+}
+
+table {
+    margin: 30px auto;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+tr:nth-child(odd){
+    background-color: #f9f9f9;
+}
+
+tr :first-child{
+    font-weight: 700;
+}
+
+tr:hover{
+    background-color: rgba(0, 0, 255, 0.05);
+}
+
+th{
+    background-color: red;
+    color: #fff;
+    border: 1px solid #ccc;
+    height : 50px;
+}
+
+td{
+    border: 1px solid #ccc;
+    font-weight: normal;
+    height: 40px;
+    padding: 6px 10px;
+
+}
+
+td img{
+    width: 100px;
+}
+
+button{
+    height: 32px;
+    border-radius: 4px;
+    border: none;
+    background-color: red;
+    box-shadow: 1px 1px rgba(0,0,0,0.2);
+    padding: 0 10px;
+    color: #fff;
+    font-weight: 700;
+}
+
+button:hover{
+    background-color: #e20000;
+    box-shadow: 0 0 rgba(0,0,0,0.2);
+}
+
+
+.fa-amazon:before{
+    margin-right: 6px;
+}
