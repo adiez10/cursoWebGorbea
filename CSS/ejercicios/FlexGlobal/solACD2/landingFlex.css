@@ -1,0 +1,131 @@
+body{
+  font-family: sans-serif;
+  height: 100%;
+}
+/*header*/
+.cabecera{
+  text-align: center;
+  padding: 30px;
+  background: #fa8071;
+  height: 150px;
+  color:white;
+}
+/*nav*/
+.menu{
+    /* position: absolute;
+    width: 98.5%; */
+    display: flex;
+    background-color: #19bc97;
+    justify-content: space-between;
+
+}
+
+.menuI{
+  margin-left: 10px;
+  /* flex: 2; */
+  /* display: flex;
+  justify-content: flex-start; */
+    /* float: left;
+    align-items: flex-start;
+    width: max-content; */
+    background-color: #19bc97;
+}
+.menuD{
+  margin-right: 10px;
+  /* flex: 1; */
+  /* display: flex;
+  justify-content: flex-end; */
+    /* float: right;
+    align-items: flex-end;
+    width: max-content; */
+    background-color: #19bc97;
+}
+ul{
+  display:flex;
+  flex-direction: column;
+  width: max-content;
+  justify-content: space-between;
+  gap: 2px;
+  padding:0;
+  list-style: none;
+}
+ul li{
+  background: rgba(123,198,199,0.8);
+  /* flex-grow: 1; */
+
+}
+ul a, ul a:link{
+
+  font-family: sans-serif;
+  text-decoration: none;
+  color: white;
+  /* padding: 8px 12px; */
+  /* display:block; */
+  width:100%;
+  height: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:hover{
+  background-color: darkgreen;
+  color: white;
+
+}
+/*main*/
+section{
+  text-align: center;
+}
+.cuerpo{
+  display: flex;
+  height: 100%;
+}
+.sidebar{
+  background: #f1f1f1;
+  padding: 24px;
+  text-align: left;
+}
+.cuadro{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  width: 400px;
+  height: 200px;
+  background: #cccccc;
+  list-style: none;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+.principal{
+  width: 650px;
+  padding: 24px;
+  text-align: left;
+}
+
+.rectangulo{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  width: 668px;
+  height: 200px;
+  background: #cccccc;
+  padding:0px;
+  list-style: none;
+  font-family: sans-serif;
+}
+.pie{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  width:100%;
+  height: 50px;
+  background: #cccccc;
+  padding:0px;
+  list-style: none;
+  font-family: sans-serif;
+  }

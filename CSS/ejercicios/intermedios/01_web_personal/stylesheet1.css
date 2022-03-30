@@ -1,125 +1,129 @@
 /**BODY**/
 
 p,h1,h2,h3,h4,h5,h6,li{
-    font-family: "Roboto Condensed";
-    color: #444;
+  font-family: "Roboto Condensed";
+  color: #444;
 }
 
 p{
-    font-size: 16px;
-    font-weight: normal;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 h1{
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
 }
 
 h2{
-    font-size: 28px;
-    font-weight: bold;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 body{
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
 }
 /**HEADER**/
 
 header{
-    width: 100%;
-    height:65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:0;
-    background-color: lightslategrey;
+  width: 100%;
+  height:65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  background-color: lightslategrey;
 }
 
 /**MAIN**/
 
 main{
-    margin: 10px 60px;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+  margin: 10px 60px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 
 }
 
 ·colizda{
-    width: 20%;
-    margin-right: 60px;
+  width: 20%;
+  margin-right: 60px;
 }
 
 
 .coldcha{
-    width: 60%;
+  width: 60%;
 }
 
 table :first-child{
-    height: 30px;
+  height: 30px;
 }
 
 tr:nth-child(even){
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }
 
 tr:nth-child(odd){
-    background-color: #fff;
+  background-color: #fff;
 }
 
 tr {
-    height: 50px;
+  height: 50px;
 }
 
 tr :first-child {
-    width: 40%;
-    padding-right: 40px;
+  width: 40%;
+  padding-right: 40px;
 }
 
 tr :nth-child(2n){
-    width: 20%;
+  width: 20%;
 }
 
 th{
-    text-align: left;
+  text-align: left;
 
-    color: lightslategrey;
+  color: lightslategrey;
 }
 
 td{
-    font-weight: normal;
-    font-size: 16px;
+  font-weight: normal;
+  font-size: 16px;
 }
 
 
 #retrato {
-    width: 200px;
-    border-radius: 100px;
-    margin: 0 20%;
+  width: 200px;
+  border-radius: 100px;
+  margin: 0 20%;
 }
 
 /**FOOTER**/
 footer{
-    width: 100%;
-    height:52px;
-    box-shadow: 0 4px 4px #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:0;
-    background-color: lightslategrey;
-    position: fixed;
-    bottom: 0;
+  width: 100%;
+  height:52px;
+  box-shadow: 0 4px 4px #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  background-color: lightslategrey;
+  position: fixed;
+  bottom: 0;
 }
 
 footer  img {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 footer a {
-    color: #fff;
-    margin-left: 5px;
+  color: #fff;
+  margin-left: 5px;
+}
+
+#separador{
+  margin-bottom: 50px;
 }
