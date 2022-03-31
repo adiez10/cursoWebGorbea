@@ -1,0 +1,68 @@
+h2{
+  visibility: hidden;
+}
+
+.a{
+  color:yellow;
+}
+
+.b{
+  color:purple;
+}
+
+.c{
+  color:red;
+}
+
+.d{
+  color:green;
+}
+
+@media only screen and (max-width: 300px) {
+  .a{
+    visibility: visible;
+  }
+  .b,.c,.d{
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 300px) and
+(max-width: 400px) {
+  .a,.b{
+    visibility: visible;
+  }
+  .c,.d{
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 401px) and
+(max-width: 600px) {
+  .b{
+    visibility: visible;
+  }
+  .a,.c,.d{
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 600px) and
+(max-width: 960px) {
+  .c{
+    visibility: visible;
+  }
+  .a,.b,.d{
+    visibility: hidden;
+  }
+}
+
+/* Estilos para desktop */
+@media only screen and (min-width: 961px) {
+  .c,.d{
+    visibility: visible;
+  }
+  .a,.b{
+    visibility: hidden;
+  }
+}

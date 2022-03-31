@@ -1,0 +1,48 @@
+  body{
+    font-family: sans-serif;
+    height: 100vh;
+  }
+  header{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    background: #009688;
+    height: 24px;
+  }
+  main, header{
+    text-align: center;
+  }
+  main{
+
+    height: 100%;
+  }
+  .lateral{
+    flex: 1;
+    background: #ff9800;
+    color: white;
+    padding: 24px;
+  }
+  .centro{
+    flex: 2;
+    padding: 24px;
+  }
+  /* Estilos para móviles */
+  @media only screen and (max-width: 600px) {
+   .centro{
+     height: 55vh;
+   }
+   .lateral{
+     height: 5vh;
+   }
+  }
+  /* Estilos para móviles */
+  @media only screen and (min-width: 601px) {
+   body {
+     display:flex;
+     flex-direction: column;     
+     background-color: green;
+   }
+   main{
+     display: flex;
+   }
+  }
