@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Ejemplo 1 variables JS</title>
+</head>
+<body>
+  <script>
+    document.write('Hello World!');
+    document.write('<br>');
+
+    var variableInt1;
+    var variableArray = [10,16,29,"Adios"]; //Array
+    var variableString1 = "Soy el valor de la variable variableString1"; //String
+    variableString2 = "Es viernes yuhu!!!"
+    variableInt1 = 2; //Integer
+    variableFloat1 = 4.6; //Float
+    console.log(variableArray);
+    document.write(variableArray[1]);
+    document.write('<br>');
+    document.write(variableArray[3]);
+    console.log('Mira esta frase:'+variableString1);
+    console.log(variableInt1);
+    document.write('<br>');
+    document.write(variableString1+'. '+variableString2);
+    document.write('<br>');
+    document.write('Suma: '+variableInt1+variableFloat1);
+    document.write('<br>');
+    document.write('Resta: '+ (variableFloat1-variableInt1));
+    document.write('<br>');
+    document.write('Producto: '+variableInt1*variableFloat1);
+    document.write('<br>');
+    document.write('División: '+variableInt1/variableFloat1);
+    document.write('<br>');
+    var variableInt1=2;
+    document.write('aumento: ' +(variableInt1++));
+    document.write('<br>');
+    var variableInt1=2;
+    document.write('disminuye: '+ (--variableInt1));
+    document.write('<hr>');
+    var color1= "purple";
+    var color2= "pink";
+    document.write('<p>color 1: ' + color1 + '<br>color 2: ' + color2 + '</p>');
+
+  </script>
+</body>
+</html>
