@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Ejemplo 4 SWITCH</title>
+</head>
+<body>
+  <script>
+    //devuelve numero entero de 0(Domingo),1(Lunes) a 6(Sabado)
+    var dia = new Date().getDay();
+    var mensaje;
+    switch (dia) {
+      case 0:
+      mensaje = "Domingo";
+      break;
+      case 1:
+      mensaje = "Lunes";
+      break;
+      case 2:
+      mensaje = "Martes";
+      break;
+      case 3:
+      mensaje = "Miercoles";
+      break;
+      case 4:
+      mensaje = "Jueves";
+      break;
+      case 5:
+      mensaje = "Viernes";
+      break;
+      case 6:
+      mensaje = "Sabado";
+      break;
+      default:
+        mensaje = "No he obtenido dia de la semana";
+      }
+        document.write("Hoy es el dia "+dia+ " de la semana, ten un buen: "+mensaje);
+
+  </script>
+</body>
+</html>

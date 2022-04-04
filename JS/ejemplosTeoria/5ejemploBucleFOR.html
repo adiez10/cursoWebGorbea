@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo 5 Bucle FOR</title>
+  </head>
+  <body>
+
+    <p id="demo"></p>
+
+    <script>
+      //para o desde (i= 0; mientras i < 5; i=i+1)
+      //for (valor_inicial; condición; incremento/decremento)
+      var text="";
+      for (var i = 0; i < 5; i++) {
+        //código a realizar mientras se cumpla la condición;
+        text += "El número es " + i + "<br>";
+      }
+      //document.write(text);
+      document.getElementById("demo").innerHTML = text;
+    </script>
+
+  </body>
+</html>

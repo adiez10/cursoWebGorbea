@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Ejemplo 9 POPUP</title>
+</head>
+<body>
+  <button onclick="myFunctionAlert()">POPUP ALERT</button>
+  <button onclick="myFunctionConfirm()">POPUP Confirm</button>
+  <button onclick="myFunctionPrompt()">POPUP prompt</button>
+  <p id="textoConfirm"></p>
+  <p id="nombre"></p>
+  <script>
+    function myFunctionAlert() {
+      alert("Bienvenido a JS");
+    }
+
+    function myFunctionConfirm() {
+
+      var texto = "Presiona un botón";
+      var opcionSeleccionada = confirm(texto);
+      if (opcionSeleccionada == true) {
+        texto = "Presionaste Aceptar";
+        alert("Presionaste aceptar");
+      } else {
+        texto = "Presionaste Cancelar";
+        alert("Presionaste cancelar");
+      }
+      document.getElementById("textoConfirm").innerHTML = texto;
+    }
+
+    function myFunctionPrompt() {
+      var person = prompt("Por favor escribe tu nombre y pulsa aceptar", "Tu nombre va aqui dentro");
+      if (person != null && person!="") {
+        document.getElementById("nombre").innerHTML = "Hola " + person + " ¿Cómo estas?";
+      }else{
+        alert("Que escribas tu nombre!!!!!! y pulses aceptar!!!!")
+      }
+    }
+  </script>
+</body>
+</html>

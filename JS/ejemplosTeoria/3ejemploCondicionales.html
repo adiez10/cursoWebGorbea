@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo 3 condicionales</title>
+  </head>
+  <body>
+    <script>
+      var hora = new Date().getHours();
+      // var hora = 23;
+      var saludo;
+      //si la hora es menor que 12 "Buenos días"
+      if(hora<12){
+        saludo="Buenos días";
+      }else if(hora<20){
+        //si la hora es menor que 20 "buenas tardes"
+        saludo="Buenas tardes";
+      }else{
+        //en el resto de casos buenas noches
+        saludo="Buenas noches";
+      }
+      document.write("Son las "+hora+" horas: "+saludo);
+      // document.write(saludo);
+    </script>
+  </body>
+</html>

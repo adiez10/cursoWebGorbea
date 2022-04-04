@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo 6 ARRAY</title>
+  </head>
+  <body>
+    <p id="texto"></p>
+
+    <script>
+      var coches = ["BMW","Volvo","Saab","Ford","Fiat","Audi","Porsche","Seat"];
+      var marcas="";
+      // marcas = marcas+coches[0]+"<br>";
+      // marcas = marcas+coches[1]+"<br>";
+      // marcas = marcas+coches[2]+"<br>";
+      // marcas = marcas+coches[3]+"<br>";
+      // marcas = marcas+coches[4]+"<br>";
+      // marcas = marcas+coches[5]+"<br>";
+      // marcas = marcas+coches[6]+"<br>";
+      var tamañoArray = coches.length;
+      //bucle for tradicional
+      // for(var i=0;i<coches.length;i++){
+      //   marcas = marcas+coches[i]+"<br>";
+      // }
+      //bucle for in (for mejorado)
+      //da una vuelta por cada elemento (car) que haya en el array (coches)
+      for(var car in coches){
+        marcas = marcas+coches[car]+"<br>";
+      }
+      document.getElementById("texto").innerHTML = marcas;
+      document.write("<br>");
+      document.write(tamañoArray);
+    </script>
+  </body>
+</html>
