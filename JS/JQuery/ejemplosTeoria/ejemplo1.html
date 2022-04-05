@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo 1 JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('p').click(function(){
+          $(this).hide();
+        });
+        // 
+        // $("!p").click(function(){
+        //   $('p').show();
+        // });
+
+      });
+    </script>
+  </head>
+  <body>
+    <p>Al clickar desaparezco.</p>
+    <p>Click aqui!!</p>
+    <p>Click aqui tambien</p>
+  </body>
+</html>

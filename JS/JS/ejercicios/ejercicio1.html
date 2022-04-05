@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>JS Ejercicio 1 </title>
+  <!-- Realiza un script que pida la edad y si es mayor de 18 años indica que ya puede
+  conducir.  -->
+</head>
+<body>
+  <p id="mensaje"></p>
+
+  <script>
+    //PIDE POR TECLADO LA EDAD
+    var edad = prompt("Introduce tu edad");
+    //comprobamos que lo que introcude el usuario es un número
+    if(Number(edad) == edad){
+      //si tienes edad entre 18 y 79
+      if(edad>=18 && edad<80){
+        document.getElementById("mensaje").innerHTML = "Puedes conducir";
+      }else{
+        document.getElementById("mensaje").innerHTML = "No puedes conducir";
+      }
+    }else{
+      alert("¡Introduce un número!");
+    }
+  </script>
+</body>
+</html>
