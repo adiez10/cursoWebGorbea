@@ -1,38 +1,181 @@
-<!-- By http://jquery-manual.blogspot.com -->
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.2.min.js'></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
-$(function(){
-        $(document).keyup(function(tecla){
-            if (tecla.keyCode == 39) {
-                $('#mario').animate({ left: "+=50" }, function(){$("#mario").stop()});
-                }
-                    if (tecla.keyCode == 37) {
-                $('#mario').animate({ left: "-=50" }, function(){$("#mario").stop()});
-                }
+$(document).ready(function(){
+		// ancho del navegador, altura
+		var cw=document.documentElement.clientWidth;
+		var ch=document.documentElement.clientHeight;
+		 // conjunto de caracteres
+		var letters="A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,S,Y,Z";
+		 // número aleatorio
+		function fRandomBy(under, over){
+			return parseInt(Math.random()*(over-under+1) + under);
+		}
+		 // caracteres aleatorios
+		function randomLetter(){
+			var arr=letters.split(",");
+			return arr[fRandomBy(0,25)];
+		}
 
-                        if (tecla.keyCode == 90) {
-                $('#estrella').animate({ top: "-=500" });
-                $('#estrella').animate({ top: "+=500" });
-                }
-        });
-        });
+		var bombArr=new Array();
+
+		var bombObj=function(x){
+			var letter=randomLetter();
+			var div=$("<div></div>")
+			.addClass("bomb")
+			.css("left",x)
+			.html(letter)
+			.appendTo($("body"))
+			return {
+				down:function(){
+					div.animate({"top":ch+"px"},3000,function(){
+						if(div.css("top")==ch+"px"){
+							gameOver();
+						}
+					});
+				},
+				fire:function(){
+					div.width(100)
+					   .height(100)
+					   .css("background","url(img/explosion.png) no-repeat")
+					   .html("")
+					   .stop();
+
+					setTimeout(function(){
+						div.remove();
+					},1000);
+
+				},
+				getKey:function(){
+					return letter;
+				}
+			}
+		}
+
+		var planeObj=function(){
+			var div=$("<div></div>")
+			.addClass("plane")
+			.css({
+				top:"0px",
+				left:"0px"
+			})
+			.appendTo($("body"))
+			return {
+				fly:function(){
+					div.animate({"left":cw+"px"},3000,function(){
+						$(this).remove();
+					});
+				},
+				dropBomb:function(){
+					var x=div.css("left");
+					var left=x.replace("px","");
+					if(left>0&&cw-left>50){
+						var bomb=new bombObj(x);
+						bombArr.push(bomb);
+						bomb.down();
+					}
+				}
+			}
+		}
+
+		var score=0;
+		$(document).keydown(function(event){
+			var arr=letters.split(",");
+			var str=arr[event.keyCode-65];
+			for(var i=0;i<bombArr.length;i++){
+				var bomb=bombArr[i];
+				if(bomb.getKey()==str){
+					bomb.fire();
+					bombArr.splice(i,1);
+					score++;
+					$("#scoreBoard").html(score);
+				}
+			}
+		});
+
+		function gameOver(){
+			clearInterval(p1);
+			clearInterval(p2);
+			$(".plane").stop().remove();
+			$(".bomb").stop().remove();
+			 $ ("# gameBtn"). val ("Reiniciar"). show ();
+			$("#scoreBoard").html("0");
+		}
+
+		var p1,p2;
+		$("#gameBtn").click(function(){
+			$(this).hide();
+			p1=setInterval(function(){
+				var plane=new planeObj();
+				plane.fly();
+				p2=setInterval(function(){
+					plane.dropBomb();
+				}, fRandomBy(700, 1000));
+			},2000);
+		});
+	});
 </script>
+ <título> Documento sin título </ título>
 <style>
-#juego{background: white; border: 5px solid blue; width: 500px; height: 500px; overflow: hidden;}
-#mario{width: 150px; height: 150px; top:350px; background: url(https://lh4.googleusercontent.com/-__HvIo1I1wk/UeAweHF7GTI/AAAAAAAAESs/q78gHPDuc5U/s150-no/super+mario.png); position:relative;}
-#estrella{width: 50px; height: 50px; top:-50px; background: url(https://lh4.googleusercontent.com/-_DuqmkJ4Jdc/UeAwVnZkboI/AAAAAAAAESY/hT_Nph3umbA/s50-no/estrella.jpg); position:relative;}
+body {
+	overflow:hidden;
+	width:100%;
+	background:url(img/qh06-1280.jpg);
+}
+#scoreBoard {
+	background:url(img/scorebg.png) no-repeat;
+	width:100px;
+	height:100px;
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+	line-height:80px;
+}
+#gameBtn {
+	position:absolute;
+	top:230px;
+	left:550px;
+}
+.bomb {
+	background:url(img/bigbomb.png) no-repeat;
+	width:56px;
+	height:81px;
+	position:absolute;
+	top:0px;
+	color:#ffffff;
+	font-size:20px;
+	text-align:center;
+	font-weight:bold;
+	line-height:110px;
+}
+.plane {
+	background:url(img/bomber01.png) no-repeat;
+	width:200px;
+	height:50px;
+	position:absolute;
+}
+#gameBtn {
+	background:url(img/btnstart.png) no-repeat;
+	width:263px;
+	height:170px;
+	cursor:pointer;
+	border:none;
+	font-size:32px;
+	text-align:center;
+	font-weight:bold;
+	color:#0f0e0c;
+	line-height:30px;
+}
 </style>
 </head>
-<body>
- <div id="juego">
-<div id="mario">
-<center>
-<div id="estrella"></div>
-</center>
-</div>
-</div>
+<body scroll="no">
+ <input id = "gameBtn" type = "button" value = "inicio del juego" />
+<div id="scoreBoard">0</div>
 </body>
 </html>

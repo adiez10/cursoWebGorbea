@@ -1,0 +1,2 @@
+http://www.w3bai.com/es/jquery/jquery_ref_effects.html
+http://www.w3bai.com/es/jquery/default.html

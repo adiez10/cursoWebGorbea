@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#p1").hover(function(){
+        //alert("Estas en p1!");
+        $("#p1").text("Estas en p1!");
+      },
+      function(){
+        //alert("Adios!! dejaste p1");
+        $("#p1").text("Adios!! dejaste p1");
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <p id="p1">Esto es un parrafo.</p>
+
+</body>
+</html>
