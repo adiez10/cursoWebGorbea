@@ -30,7 +30,7 @@ CREATE TABLE Paquetes(
   codigopaquete int,
   descripcion varchar(30) NOT NULL,
   destinatario varchar(30) NOT NULL,
-  dirección varchar(30) NOT NULL,
+  direccion varchar(30) NOT NULL,
   codigoprovincia int NOT NULL,
   dni varchar(9) NOT NULL,
   PRIMARY KEY (codigopaquete),
