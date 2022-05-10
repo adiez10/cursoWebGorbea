@@ -2,13 +2,16 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Programa en PHP</title>
+    <title>Mi primer programa en PHP</title>
   </head>
   <body>
-    <h1>Probando PHP</h1>
-	<form action="variablesInternacionalizacion.php" method="get">	  
-		<button name="lang" value="es" type="submit">Español</button>
-		<button name="lang" value="en" type="submit">Inglés</button>
+    <h1>Probando PHP ejemplo 1</h1>
+    <form action="variablesInternacionalizacion.php" method="get">
+      <select name="lang">
+        <option value="en">Inglés</option>
+        <option value="es">Español</option>
+      </select>
+      <input type="submit" value="Cambiar Idioma">
     </form>
     <?PHP
         error_reporting(0);
