@@ -1,0 +1,10 @@
+Esta carpeta incluirá todas las clases en PHP necesarias para que la aplicación funcione.
+Para organizar un poco mejor esta carpeta seguiremos las siguientes pautas:
+
+Crear un archivo config.php donde incluiremos los credenciales de la base de datos.
+
+Crear un archivo llamado functions.php que incluya las demás clases
+
+Crear una clase llamada Tools.php que incluya funciones generales, para conectar/desconectar la base de datos o para obtener datos fácilmente a partir de una sentencia SQL.
+
+Crear una clase por cada tabla de la base de datos llamada (Nombre de la tabla)Class.php que permita insertar, modificar y obtener datos de esta tabla. Además si la tabla está indexada con un primary key se puede crear una variable global de clase para obtener datos específicos.

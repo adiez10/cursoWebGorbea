@@ -1,0 +1,2 @@
+Esta carpeta almacenará pequeños scripts php o códigos html que serán insertados en los scripts de la raiz principal del proyecto. 
+Aquí incluiremos los archivos header.php y footer.php.

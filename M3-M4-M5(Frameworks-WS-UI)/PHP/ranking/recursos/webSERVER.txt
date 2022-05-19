@@ -1,0 +1,7 @@
+host->  https://www.awardspace.com/
+
+dominio->  https://www.freenom.com/
+
+NS5.AWARDSPACE.COM
+
+NS6.AWARDSPACE.COM

@@ -1,0 +1,1 @@
+Aqui almacenaremos recursos necesarios para el proyecto (p.e. SCRIPTS para generar la BD). No habra que subir está carpeta al servidor.
