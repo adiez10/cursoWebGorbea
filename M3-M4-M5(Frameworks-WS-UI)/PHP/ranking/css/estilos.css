@@ -27,6 +27,35 @@ h1{
   margin: 0px;
 }
 
+h2{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+h4{
+  font-size: 16px;
+  font-weight: bold;
+  color: #222222;
+}
+
+h5{
+  font-size: 12px;
+  font-weight: bold;
+  color: #612D64;
+  margin-bottom: 8px !important;
+}
+
+h6{
+  font-size: 10px;
+  font-weight: bold;
+}
+
 a, a:hover{
   color: #FFFFFF;
   text-decoration: none;
@@ -68,7 +97,106 @@ nav>ul>li>a{
   justify-content: space-between;
 }
 
+/*Section BODY*/
+#sectionid{
+  margin: 2% 5%;
+}
 
+section h2{
+  color: #222222;
+  margin-bottom: 0px !important;
+  margin-top: 14px;
+}
+
+.addArticulo{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas: "celdaRank celdaNombreGrupo celdaNombreEstilo celdaAnho celdaBoton"
+                        "celdaNota celdaDescripTitle celdaDescripTitle celdaDescripTitle celdaDescripTitle"
+                        "celdaNota celdaDescrip celdaDescrip celdaDescrip celdaDescrip";
+  grid-template-columns: 8% 30% 16% 16% 30%;
+  margin-top: 8px;
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
+  background-color: white;
+  border-radius:10px;
+}
+
+.celdaRank{
+  grid-area: celdaRank;
+  background-color: #612D64;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  margin-right: 10px;
+}
+
+.celdaRank>h3{
+  font-size: 14px;
+  color: #DDDDDD;
+}
+
+.celdaNota{
+  grid-area: celdaNota;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-color: #222222;
+  border-bottom-left-radius: 10px;
+  margin-right: 10px;
+}
+
+.h2Nota{
+  color: white;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+}
+
+.celdaNombreGrupo{
+  grid-area: celdaNombreGrupo;
+  display: grid;
+  align-content: center;
+}
+
+.celdaNombreEstilo{
+  grid-area: celdaNombreEstilo;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.celdaAnho{
+  grid-area: celdaAnho;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.celdaBoton{
+  grid-area: celdaBoton;
+  display: grid;
+  align-content: center;
+  justify-content: right;
+}
+
+.celdaDescripTitle{
+  grid-area: celdaDescripTitle;
+  display: grid;
+  align-content: center;
+}
+
+.celdaDescrip{
+  grid-area: celdaDescrip;
+  display: grid;
+  align-content: center;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
 /*FOOTER*/
 .pie{
   width: 100%;
@@ -91,4 +219,51 @@ nav>ul>li>a{
   color: white;
   margin: 25px 30px 0 30px;
   font-size: 20px;
+}
+
+/*BOTONES*/
+.btn-primary{
+  background-color: #612D64;
+  border-color: #612D64;
+  /* border: 8px solid #4CAF50; */
+  text-decoration: none;
+  height: 40px;
+  font-weight: bold;
+  box-shadow: 0px 0px 6px 2px  rgba(0,0,0,0.1);
+}
+
+.btn-secondary{
+  margin-right: 10px;
+  margin-top: 10px;
+  height: 32px;
+  line-height: 16px;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid #612D64;
+}
+
+.btn-secondary>a{
+  color: #612D64;
+}
+
+/*Page aboutme*/
+.sectionabout{
+  background-color: white;
+  margin: 2% 5%;
+}
+
+.divabout{
+  margin: 20px;
+}
+
+.imgabout{
+  float: right;
+}
+
+.pabout{
+  font-size: 18px;
+}
+
+.h2about{
+  color: #612D64;
 }
