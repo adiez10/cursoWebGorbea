@@ -8,7 +8,7 @@
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 <header class="cabecera">
-  <h1><a href='index.php'>RANKING de GRUPOS MUSICALES</a></h1>
+  <h1><a href='index.php'>RANKING de XYZ</a></h1>
   <nav>
     <ul>
       <li><a href="aboutme.php">About me</a></li>

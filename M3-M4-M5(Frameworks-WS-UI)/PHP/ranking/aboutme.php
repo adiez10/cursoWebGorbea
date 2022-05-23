@@ -22,8 +22,13 @@
         <p class="pabout">Actualmente me dedico a BLALBA LBALBA dfasfdsalbalsdlf</p>
         <br>
         <h2 class="h2about">Objetivo de la web</h2>
-        <p class="pabout">Esta web ha sido creada para BLALBA LBALBA dfasfdsalbalsdlf</p>        
+        <p class="pabout">Esta web ha sido creada para BLALBA LBALBA dfasfdsalbalsdlf</p>
       </div>
+      <br>
+      <div style="text-align:center;">
+        <a href="index.php" class="btn btn-primary abutton">Volver</a>
+      </div>
+      <br>
     </section>
   </body>
 

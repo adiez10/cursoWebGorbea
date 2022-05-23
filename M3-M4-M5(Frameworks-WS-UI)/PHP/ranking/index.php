@@ -12,7 +12,7 @@
       <div class="addArticulo">
         <h2>Los mejores XYZ</h2>
         <button class="btn btn-primary">
-          <a href="#">Añadir XYZ</a>
+          <a href="crearForm.php">Añadir XYZ</a>
         </button>
       </div>
 
@@ -24,7 +24,7 @@
         <div class="celdaAnho"><p>2010</p></div>
         <div class="celdaBoton">
           <button class="btn btn-secondary">
-            <a href="#">Valorar</a>
+            <a href="valorarForm.php">Valorar</a>
           </button>
         </div>
         <div class="celdaDescripTitle">
