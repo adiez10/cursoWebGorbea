@@ -12,7 +12,13 @@
   <nav>
     <ul>
       <li><a href="aboutme.php">About me</a></li>
-      <li><a href="#">Login</a></li>
+      <?php
+      if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !==true ){
+        echo '<li><a href="login/login.php">LOGIN</a></li>';
+      }else{
+        echo '<li><a href="login/logout.php">LOGOUT</a></li>';
+      }
+      ?>
     </ul>
   </nav>
 </header>
