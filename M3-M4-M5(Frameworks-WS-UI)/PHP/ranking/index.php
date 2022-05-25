@@ -12,7 +12,7 @@
   <body>
     <?php
       $login =false;
-      if(!isset($_SESSION["loggedin"]) || !isset($_SESSION["loggedin"]) !==true){
+      if(!isset($_SESSION["loggedin"]) || ($_SESSION["loggedin"]) !==true){
         $login = false;
       }else{
         $login = true;

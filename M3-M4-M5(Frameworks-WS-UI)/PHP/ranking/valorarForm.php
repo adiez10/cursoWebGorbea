@@ -1,18 +1,42 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
 <head>
-  <?php require_once 'mod/header.php'; ?>
+  <?php
+  require_once 'inc/functions.php';
+  require_once 'mod/header.php';
+  ?>
   <link href="css/estilos.css" rel="stylesheet" type= "text/css">
 </head>
 <body>
+  <?php
+  $login =false;
+  if(!isset($_SESSION["loggedin"]) || ($_SESSION["loggedin"]) !==true){
+    $login = false;
+    echo "<script> window.location='index.php'; </script>";
+  }else{
+    $login = true;
+  }
+
+  $idarticulo = htmlspecialchars($_GET['idarticulo']);
+  $articuloTable = new Articulo();
+  $articuloTable->ID = $idarticulo;
+  $infoArticulo = $articuloTable->getData();
+
+  $valoracionTable = new Valoracion();
+  $valoracionTable->ID = $idarticulo;
+  $comentarios = $valoracionTable->getComentarios();
+
+  $idUsuario = $_SESSION['id'];
+  ?>
   <section class="sectionForm">
     <div class="info" style="text-align:center;">
-      <h2>Titulo del elemento a valorar</h2>
+      <h2><?php echo $infoArticulo[0]['nombre']; ?></h2>
 
       <form action="inc/validarForms.php" method="post">
         <input type="hidden" name="tipoForm" value="valorar">
-        <input type="hidden" name="idArticulo" value="1">
-        <input type="hidden" name="idUsuario" value="1">
+        <input type="hidden" name="idArticulo" value="<?php echo $idarticulo;?>">
+        <input type="hidden" name="idUsuario" value="<?php echo $idUsuario;?>">
 
         <div class="form-check form-check-inline">
           <div class="form-check form-check-inline">
