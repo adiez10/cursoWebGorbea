@@ -20,7 +20,7 @@ class Articulo{
     return $consulta;
   }
 
-  //actualizar los articulos
+  //actualizar la notageneral de articulos
   function update($notageneral){
     $connect = new Tools();
     $conexion = $connect->connectDB();

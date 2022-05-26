@@ -94,17 +94,17 @@
       <a href="index.php" class="btn btn-primary abutton">Volver</a>
     </form>
 
-
     <h5 style="margin:10px;">Comentarios de otros usuarios</h5>
-
-    <div class="description">
-      <p>Comentario1: Aqui van los comentarios de los usuarios este es un comentario 1</p>
-    </div>
-    <hr>
-    <div class="description">
-      <p>Comentario2: Aqui van los comentarios de los usuarios este es un comentario 2</p>
-    </div>
+    <?php foreach ($comentarios as $elemento) { ?>
+      <div class="description">
+        <p><?php echo $elemento['comentarios']?></p>
+      </div>
+    <?php } ?>
+    
   </div>
 </section>
 </body>
+<?php
+require_once 'mod/footer.php';
+?>
 </html>
