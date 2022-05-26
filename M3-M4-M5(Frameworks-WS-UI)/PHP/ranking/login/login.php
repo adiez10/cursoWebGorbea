@@ -98,17 +98,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 	<header class="cabecera">
-		<h1><a href="../index.php">RANKING de XYZ</a></h1>
+		<h1><a href="../index.php">RANKING DE GRUPOS MUSICALES</a></h1>
 	</header>
 </head>
 <body>
     <div class="loginForm">
       <div class="logindiv">
         <h2>Login</h2>
-        <p>Por favor, complete sus credenciales para iniciar sesión.</p>
+        <p style="margin-top:12px;">Por favor, complete sus credenciales para iniciar sesión.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                <label>Usuario</label>
+                <label style="margin-top:12px;">Usuario</label>
                 <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
                 <span class="help-block"><?php echo $username_err; ?></span>
             </div>
@@ -120,7 +120,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group" style="text-align:center;">
                 <input type="submit" class="btn btn-primary" value="Ingresar">
 				        <a href="../index.php" class="btn btn-primary abutton">Volver</a>
-				        <p>¿No tienes una cuenta? <a href="register.php" style="color:#9a0ab4">Regístrate ahora</a>.</p>
+				        <p style="margin:8px;">¿No tienes una cuenta? <a href="register.php" style="color:#9a0ab4">Regístrate ahora</a>.</p>
             </div>
 
         </form>
@@ -128,8 +128,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </div>
 </body>
 <footer class="pie">
-  <p class="pieparraf">Author: XYZ</p>
+  <p class="pieparraf">Author: Adrián DC</p>
   <img class="imgfooter" src="../images/icon48.png">
-  <p class="pieparraf"><a href="mailto:XX@YY.org">XX@YY.org</a></p>
+  <p class="pieparraf"><a href="mailto:adiez@egibide.org">adiez@egibide.org</a></p>
 </footer>
 </html>

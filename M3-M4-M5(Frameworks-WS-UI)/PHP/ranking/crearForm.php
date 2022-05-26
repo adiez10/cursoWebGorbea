@@ -22,7 +22,7 @@
     ?>
     <section class="sectionForm">
       <div class="info" style="text-align:center;">
-        <h2>Insertar nuevo XYZ</h2>
+        <h2>Insertar nuevo grupo</h2>
         <form action="inc/validarForms.php" method="post">
           <input type="hidden" name="tipoForm" value="crear">
           <input type="hidden" name="idUsuario" value="<?php echo $idUsuario; ?>">

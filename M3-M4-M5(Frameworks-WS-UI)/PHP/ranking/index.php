@@ -21,15 +21,15 @@
 
     <section id="sectionid">
       <div class="addArticulo">
-        <h2>Los mejores XYZ</h2>
+        <h2>Los mejores grupos musicales</h2>
         <?php
         if($login === true){
           echo '<button class="btn btn-primary">
-                  <a href="crearForm.php">Añadir XYZ</a>
+                  <a href="crearForm.php">Añadir grupo</a>
                 </button>';
         }else{
           echo '<button class="btn btn-primary boton-deshabilitado">
-                  <a href="login/login.php">Añadir XYZ</a>
+                  <a href="login/login.php">Añadir grupo</a>
                 </button>';
         }
         ?>
