@@ -24,13 +24,17 @@
         <h2>Los mejores grupos musicales</h2>
         <?php
         if($login === true){
-          echo '<button class="btn btn-primary">
-                  <a href="crearForm.php">Añadir grupo</a>
-                </button>';
+          echo '<a href="crearForm.php">
+                  <button class="btn btn-primary">
+                    Añadir grupo
+                  </button>
+                </a>';
         }else{
-          echo '<button class="btn btn-primary boton-deshabilitado">
-                  <a href="login/login.php">Añadir grupo</a>
-                </button>';
+          echo '<a href="login/login.php">
+                  <button class="btn btn-primary boton-deshabilitado">
+                    Añadir grupo
+                  </button>
+                </a>';
         }
         ?>
       </div>
@@ -83,3 +87,10 @@
     require_once 'mod/footer.php';
   ?>
 </html>
+
+<script>
+$(window).on("load", resaltar);
+function resaltar(jQuery){
+  $("#sectionid").show(1000);
+}
+</script>

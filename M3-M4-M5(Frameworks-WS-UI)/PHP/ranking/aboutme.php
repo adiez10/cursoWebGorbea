@@ -23,7 +23,7 @@
         <p class="pabout">Desde hace no mucho tiempo me dedico a la docencia.</p>
         <br>
         <h2 class="h2about">Objetivo de la web</h2>
-        <p class="pabout">Esta web ha sido creada con un objetivo didáctico, destinada para aprender los conceptos básicos de la programación de aplicaciones web empleando principalmente PHP, CSS, HTML y SQL entre otras tecnologías, en el curso impartido en Egibide en Diciembre de 2020.</p>
+        <p class="pabout">Esta web ha sido creada con un objetivo didáctico, destinada para aprender los conceptos básicos de la programación de aplicaciones web empleando principalmente PHP, CSS, HTML y SQL entre otras tecnologías, en cursos impartidos para formación para el empleo (LANBIDE).</p>
       </div>
     </section>
   </BODY>

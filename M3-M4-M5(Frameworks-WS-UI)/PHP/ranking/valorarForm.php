@@ -96,11 +96,12 @@
 
     <h5 style="margin:10px;">Comentarios de otros usuarios</h5>
     <?php foreach ($comentarios as $elemento) { ?>
+      <hr>
       <div class="description">
         <p><?php echo $elemento['comentarios']?></p>
       </div>
     <?php } ?>
-    
+    <hr>
   </div>
 </section>
 </body>

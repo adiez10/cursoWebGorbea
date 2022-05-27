@@ -104,6 +104,7 @@ nav>ul>li>a:hover, header>h1>a:hover{
 
 /*Section BODY*/
 #sectionid{
+  display: none;
   margin: 2% 5%;
 }
 
@@ -129,6 +130,10 @@ section h2{
   box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
   background-color: white;
   border-radius:10px;
+}
+
+.grid-container:hover{
+  background-color: #5cfad5;
 }
 
 .celdaRank{
@@ -337,7 +342,7 @@ section h2{
 }
 
 .abutton{
-  padding-top: 8px;
+  padding-top: 9px;
 }
 
 .description p{
@@ -354,4 +359,63 @@ section h2{
 
 .logindiv{
   margin: 15px 15px 15px 15px;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 485px) {
+  header>nav{
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+
+  header>h1{
+    margin-left: 16px;
+    margin-top: 20px;
+  }
+
+  nav>ul>li>a{
+    margin-left: 2px;
+    font-size: 14px;
+  }
+
+  nav>ul>li{
+    float: right;
+  }
+
+  nav>ul{
+    margin-left: -10px;
+    margin-top: 16px;
+  }
+
+  .pieparraf{
+    font-size: 12px;
+  }
+
+  .pie{
+    height: 60px;
+  }
+
+  .loginForm{
+    width: 85%;
+  }
+
+  h1{
+    font-size: 18px;
+    margin-left: 16px;
+    margin-top: 20px;
+  }
+
+  .imgfooter{
+    width: 28px;
+    height: 28px;
+    margin-top: 18px;
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-areas: "celdaRank celdaNombreGrupo celdaNombreEstilo celdaAnho celdaBoton"
+                          "celdaNota celdaDescripTitle celdaDescripTitle celdaDescripTitle celdaDescripTitle"
+                          "celdaNota celdaDescrip celdaDescrip celdaDescrip celdaDescrip";
+    grid-template-columns: 17% 30% 15% 10% 28%;
+  }
 }
