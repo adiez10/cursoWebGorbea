@@ -1,8 +1,8 @@
 <?php
 
 define("SERVER","localhost");
-define("USER","adcuser");
-define("PASS","adcpass");
+define("USER","user");
+define("PASS","pass");
 define("DB","rankings");
 
 //OTROS DATOS
